@@ -1,0 +1,5 @@
+<!--components/demo.wxml-->
+<view><text>展示数字：{{number}}</text></view>
+<view><text>展示对象值a：{{newObj.a}}；对象值b：{{newObj.b}}</text></view>
+
+<view style="margin-top: 100rpx;">watch值number的变化而修改值为：{{name}}</view>

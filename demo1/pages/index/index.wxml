@@ -1,0 +1,4 @@
+<view class="intro">
+  <view style="margin-bottom: 200rpx;">这是父组件，收集数据的存在</view>
+  <demo number="{{number}}" newObj="{{newObj}}"></demo>  
+</view>
