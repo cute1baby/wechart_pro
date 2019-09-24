@@ -1,0 +1,55 @@
+<video 
+  id="myVideo" 
+  class="myVideo" 
+  title="{{videoInfo.courseName}}" 
+  src="{{videoInfo.playAddress}}" 
+  poster="{{videoInfo.cover}}" 
+  binderror="videoErrorCallback"
+
+  enable-progress-gesture 
+  show-fullscreen-btn="{{false}}"
+  show-center-play-btn="{{false}}"
+  object-fit="contain"
+  controls="{{false}}"
+  
+  autoplay='{{true}}' 
+  bindplay="videoPlay"
+  bindtimeupdate="videoUpdate" 
+  bindfullscreenchange="fullscreenchange"
+  bindended="videoEnded"
+>
+  <view class="cover" bindtap="changeProgressStatus"></view>
+
+  <view class="progress-title df dfaic" wx:if="{{progressStatus && fullStates}}">
+    <view class='iconfont back' bindtap='changeFullScreen'></view>
+    <text class="title">{{videoInfo.courseName}}</text>
+  </view>
+
+  <view class='process-container df dfaic' wx:if="{{progressStatus}}">
+    <view class='{{playStates ? "iconfont pause video-controls-icon" : "iconfont play video-controls-icon"}}' bindtap='videoOpreation'></view>
+    <view class='slider-container df df1 dfaic'>
+      <text class="currentTime">{{progressTime}}</text> 
+      <slider 
+        class="df1"
+        bindchange="sliderChange" 
+        bindchanging="sliderChanging" 
+        step="1" 
+        block-size="12"
+        value="{{sliderValue}}" 
+        backgroundColor="#A8A8A8" 
+        activeColor="#FFf" 
+        block-color="#FFf" 
+      />
+      <text class="allTime">{{allTime}}</text>
+    </view> 
+      <picker bindchange="bindPickerChange" value="{{index ? index: 1}}" range="{{magnificationList}}">
+        <view class="picker">
+          {{index ? magnificationList[index] : "倍率"}}
+        </view>
+      </picker>
+      <view 
+        class='{{fullStates ? "iconfont exitFullScreen fullSet" : "iconfont fullScreen fullSet"}}'
+        bindtap='changeFullScreen'></view>
+  </view>
+
+</video>

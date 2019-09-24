@@ -1,0 +1,105 @@
+/* 图标库 */
+
+@font-face {
+  font-family: 'iconfont';  /* project id 1352821 */
+  src: url('//at.alicdn.com/t/font_1352821_b2mx9lfbce.eot');
+  src: url('//at.alicdn.com/t/font_1352821_b2mx9lfbce.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1352821_b2mx9lfbce.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1352821_b2mx9lfbce.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1352821_b2mx9lfbce.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1352821_b2mx9lfbce.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: iconfont !important;
+  display: inline-block;
+}
+
+/*  “>” 更多箭头 */
+
+.iconfont.arrow::after {
+  content: '\e636';
+}
+
+.iconfont.back::after {
+  content: '\e635';
+}
+
+.iconfont.arrow-lower::after {
+  content: '\e70c';
+}
+
+.iconfont.arrow-upper::after {
+  content: '\e70c';
+  transform: rotate(180deg);
+}
+
+/**待确认*/
+
+.iconfont.waitconfirm::after {
+  content: '\e620';
+}
+
+/** 已完成*/
+
+.iconfont.hasfinished::after {
+  content: '\e61f';
+}
+
+/** 更换模板*/
+
+.iconfont.refreshModule::after {
+  content: '\e61e';
+}
+
+/** 锁*/
+
+.iconfont.lock::after {
+  content: '\e65b';
+}
+
+/** 微信*/
+
+.iconfont.weixin::after {
+  content: '\e70b';
+}
+
+/** 空*/
+
+.iconfont.empty::after {
+  content: '\e608';
+}
+
+/** 状态*/
+
+.iconfont.status::after {
+  content: '\e621';
+}
+
+/** 对号*/
+.iconfont.duihao::after {
+  content: '\e674';
+}
+
+/** 编辑*/
+.iconfont.edit::after {
+  content: '\e622';
+}
+
+
+/** 暂停播放 */
+.iconfont.pause::after {
+  content: '\e66c';
+}
+/** 开始播放 */
+.iconfont.play::after {
+  content: '\e865';
+}
+/** 显示全屏 */
+.iconfont.fullScreen::after {
+  content: '\e6f1';
+}
+/** 退出全屏 */
+.iconfont.exitFullScreen::after {
+  content: '\e720';
+}

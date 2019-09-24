@@ -6,6 +6,7 @@ Page({
     newObj: null
   },
   onLoad: function () {
+    wx.login();
     setInterval(() => {
       this.setData({
         number: Math.floor(Math.random() * 10) + 2,

@@ -1,0 +1,10 @@
+<!--pages/video.wxml-->
+<view class="video">
+  <customVideo 
+    wx:if="{{videoInfo.playAddress}}" 
+    videoInfo="{{videoInfo}}" 
+    continuity="{{true}}"
+    bind:myevent="submissSchedule"
+    bind:myend="jumpToNext"
+  ></customVideo> 
+</view>

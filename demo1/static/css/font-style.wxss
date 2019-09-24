@@ -1,0 +1,17 @@
+/* 常用颜色库 */
+.mkt0 { color: #000; }
+.mkt1 { color: #333333; }
+.mkt2 { color: #666666; }
+.mkt3 { color: #E2AD87; }
+.mkt4 { color: #999999; }
+.mkt5 { color: #06609A; }
+.mkt6 { color: #3CC56D; }
+.mkti { font-style: italic; }
+.mktb { font-weight: bold; }
+.mktu { text-decoration: underline; }
+.mktc { text-align: center; }
+.mktl { text-align: left; }
+.mktr { text-align: right; }
+/* input placeholder 字体颜色 */
+.inputp { color: #cccccc }
+.mkff{ color: #fff; }

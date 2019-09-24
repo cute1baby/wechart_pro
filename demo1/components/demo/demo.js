@@ -1,5 +1,5 @@
 // components/demo.js
-import { watch} from "../utils/util.js"
+import { watch} from "../../utils/util.js"
 Component({
   /**
    * 组件的属性列表

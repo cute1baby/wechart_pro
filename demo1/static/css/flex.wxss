@@ -1,0 +1,25 @@
+/*---------------------------------------------------------------------------------------------
+ *  此文件主要整理了flex的常用属性，通过class的方式添加样式，缩短开发时长，减少代码量
+ *  更多信息参考: https://segmentfault.com/n/1330000018247379
+ *--------------------------------------------------------------------------------------------*/
+
+/* 使用flex模式 */
+.df {display: -webkit-box;display: -webkit-flex;display: flex;}
+/* 横向撑满父层剩余空间 */
+.df1 {-webkit-box-flex: 1;flex: 1;overflow: hidden;}
+/* 水平垂直居中 */
+.dfc {-webkit-box-align: center;align-items: center;-webkit-box-pack: center;justify-content: center;}
+/* 垂直居中 */
+.dfaic {-webkit-box-align: center;align-items: center;}
+/* 底对齐 */
+.dfaie {-webkit-box-align: end;align-items: flex-end;}
+/* 水平居中 */
+.dfjcc {-webkit-box-pack: center;justify-content: center;}
+/* 水平方向右对齐 */
+.dfjce {-webkit-box-pack: end;justify-content: flex-end;}
+/* 水平两端对齐 */
+.dfjbw {-webkit-box-pack: justify; justify-content: space-between;}
+/* 垂直方向 */
+.dfdir {-webkit-box-orient: vertical;flex-direction: column;}
+/* 水平反向 */
+.dfre{flex-direction: row-reverse;}

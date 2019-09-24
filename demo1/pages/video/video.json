@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "自定义视频进度条演示",
+  "usingComponents": {
+    "customVideo": "/components/customVideo/customVideo"
+  }
+}
